@@ -64,7 +64,14 @@ PORT=3000
 NODE_ENV=development
 ```
 
-4. **Start the server:**
+4. **Restore Database (Optional):**
+To load sample data into your database:
+```bash
+mongorestore mongodb://localhost:27017/machinetest ./mongo-dump
+```
+See [mongo-dump/README.md](mongo-dump/README.md) for detailed backup/restore instructions.
+
+5. **Start the server:**
 ```bash
 npm start
 ```
